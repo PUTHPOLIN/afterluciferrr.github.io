@@ -1,0 +1,284 @@
+<!-- Button Modal -->
+
+<!-- Modal Content -->
+<div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="modal-title-default">Purchase Product</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="message" class="text-dark"></p>
+              
+            </div>
+            <div class="modal-footer">
+                <form action="https://afterhex.domcloud.io/purchase" method="post">
+                    <input type="hidden" name="_token" value="cr1JjMSY5sIIrQZsP5F0MXP6vXURhBLxAoAQDCO3">                <button type="submit" class="btn btn-sm btn-secondary" id="app_id" name="app_id">Yes</button>
+                
+                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Modal Content -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Afterhex">
+    <meta name="author" content="Sdach Console">
+	<meta name="robots" content="noindex" />
+    <title></title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fontawesome -->
+    <link type="text/css" href="allmin.css" rel="stylesheet">
+    <!-- Pixel CSS -->
+    <link type="text/css" href="https://afterhex.domcloud.io/css/pixel.css?v=1.0.2" rel="stylesheet">
+    <link type="text/css" href="custom.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray">
+
+
+    <div id="main" class="container clear-top">
+
+        <!-- Dark Navbar -->
+<nav class="navbar navbar-expand-lg navbar-transparent navbar-dark navbar-theme-dark mb-4 ">
+    <div class="container position-relative">
+        <a class="navbar-brand mr-lg-5" href="AfterLucifer.html">
+            <img class="navbar-brand-dark" src="albert.png" alt="menuimage">
+            <img class="navbar-brand-light" src="albert.png" alt="menuimage">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbar-primary">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                        <a href="AfterLucifer.html">
+                            <img src="albert.png" alt="menuimage">
+                        </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                        <i class="fas fa-fw fa-times" data-toggle="collapse" role="button" data-target="#navbar-primary"
+                            aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation"></i>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                <li class="nav-item"><a href="Account.html" class="nav-link">Account</a></li>
+                <li class="nav-item"><a href="Shop.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="Downloads.html" class="nav-link">Downloads</a></li>
+                <li class="nav-item"><a href="MyMachine.html" class="nav-link">My Machine</a></li>
+                <li class="nav-item"><a href="CouponCode.html" class="nav-link">Coupon Code</a></li>
+
+              
+               
+            </ul>
+        </div>
+
+        <div class="d-flex align-items-center"> 
+              
+            <div class="d-flex align-items-center">
+                <div class="dropdown pl-1">
+                   <div class="d-flex align-items-center" id="userDropdownMenu" data-toggle="dropdown" aria-expanded="false">
+                      <button class="btn btn-xs btn-circle btn-icon-only btn-light dropdown-toggle mr-3" type="button" aria-haspopup="true" aria-expanded="false"> <span class="fa fa-user"></span> </button> 
+                      <p class="font-small text-white m-0">Hi, samnang2</p>
+                   </div>
+                   <div class="dropdown-menu dropdown-menu-md shadow-soft mt-2" aria-labelledby="userDropdownMenu">
+                      
+                    <a class="dropdown-item" href="PurchaseHistory.html"><i class="fas fa-cart-arrow-down"></i> Purchase History</a> 
+                    <a class="dropdown-item" href="topuphistory.html"><i class="fas fa-money-check-alt"></i> Topup History</a> 
+                    <a class="dropdown-item" href="create.html"><i class="fas fa-laptop"></i> Add new Machine</a> 
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="accountpassword.html"><i class="fas fa-lock"></i> Change Password</a> 
+                    <a href="logout.html" class="dropdown-item text-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fas fa-sign-out-alt"></i> Sign out</a> 
+                    <form id="logout-form" action="logout.html" method="POST" style="display: none;"> 
+                       <input type="hidden" name="_token" value="cr1JjMSY5sIIrQZsP5F0MXP6vXURhBLxAoAQDCO3">                     </form>
+                   </div>
+                </div>
+            </div>
+
+                        <button class="navbar-toggler ml-2 text-dark" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+        </div>
+        
+    </div>
+</nav>
+<!-- End of Dark Navbar -->        
+<div class="row">
+    <div class="col-12">
+        <!--Breadcrumb-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-text-light bg-dark text-white">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="Shop.html">Shop</a></li>
+                <li class="breadcrumb-item"><a href="infinity-god.html">Infinity VIP</a></li>
+                <li class="breadcrumb-item active" aria-current="page"> Products</li>
+            </ol>
+        </nav>
+        <!--End of Breadcrumb-->
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-12">
+                <div class="card shadow-soft border-soft">
+            <div class="card-header">
+                <h3 class="text-center">Infinity VIP</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+
+                                            <div class="col-md-3 col-sm-12">
+                            <div class="card border-dark mb-4">
+                                <img class="card-img-top" id="product-image" src="https://afterhex.domcloud.io/images/logo/doge.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="product-name-10">Infinity VIP 15 days</h5>
+                                    <p><span class="badge badge-secondary text-uppercase" id="product-duration-10">15</span> days</p>
+                                    <h3 class="text-bold" id="product-duration-10"> $25</h3>
+                                    <!-- <span class="text-muted" id="product-duration-10">total purchase: 138</span> -->
+                                   
+                                </div>
+
+                                <div class="card-footer">
+                                    
+                                        <button type="button" name="do-order"  class="btn btn-success btn-sm btn-block do-order" value="10" >Buy</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-3 col-sm-12">
+                            <div class="card border-dark mb-4">
+                                <img class="card-img-top" id="product-image" src="https://afterhex.domcloud.io/images/logo/doge.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="product-name-11">Infinity VIP 30 days</h5>
+                                    <p><span class="badge badge-secondary text-uppercase" id="product-duration-11">30</span> days</p>
+                                    <h3 class="text-bold" id="product-duration-11"> $40</h3>
+                                    <!-- <span class="text-muted" id="product-duration-11">total purchase: 372</span> -->
+                                   
+                                </div>
+
+                                <div class="card-footer">
+                                    
+                                        <button type="button" name="do-order"  class="btn btn-success btn-sm btn-block do-order" value="11" >Buy</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                            <div class="col-md-3 col-sm-12">
+                            <div class="card border-dark mb-4">
+                                <img class="card-img-top" id="product-image" src="https://afterhex.domcloud.io/images/logo/doge.png" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="product-name-13">Infinity VIP 90 days</h5>
+                                    <p><span class="badge badge-secondary text-uppercase" id="product-duration-13">90</span> days</p>
+                                    <h3 class="text-bold" id="product-duration-13"> $100</h3>
+                                    <!-- <span class="text-muted" id="product-duration-13">total purchase: 21</span> -->
+                                   
+                                </div>
+
+                                <div class="card-footer">
+                                    
+                                        <button type="button" name="do-order"  class="btn btn-success btn-sm btn-block do-order" value="13" >Buy</button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                                        
+                    
+
+              
+                </div>
+
+              
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        <div id="particles-js">
+
+        </div>
+
+        <footer class="footer section section-sm bg-dark text-light mt-5">
+    <div class="container">
+       <div class="row align-items-md-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+             <div class="d-flex align-items-center">
+                <!-- Logo --> <a class="footer-brand brand-sm mr-3" href="#"><img src="albert.png" alt="Pixel logo"> </a><!-- End Logo -->
+                <p class="small mb-0">© AfterHex. 2020<br>All rights reserved.</p>
+             </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4 mb-sm-0">
+             <!-- List -->
+             <ul class="list-inline list-group-flush list-group-borderless text-md-center mb-0">
+                <li class="list-inline-item px-0 px-sm-2"><a class="text-gray" href="#">About</a></li>
+                <li class="list-inline-item px-0 px-sm-2"><a class="text-gray" href="#">Terms</a></li>
+                <li class="list-inline-item px-0 px-sm-2"><a class="text-gray" href="#">Contact</a></li>
+             </ul>
+             <!-- End List -->
+          </div>
+          <div class="col-sm-6 col-md-4">
+             <!-- Social Networks -->
+             <ul class="list-inline text-sm-right mb-0">
+                <li class="list-inline-item"><a class="icon icon-xs icon-twitter mr-3"><span class="fab fa-youtube"></span></a></li>
+                <li class="list-inline-item"><a class="icon icon-xs icon-facebook mr-3"><span class="fab fa-facebook-f"></span></a></li>
+             </ul>
+             <!-- End Social Networks -->
+          </div>
+       </div>
+    </div>
+ </footer>
+    </div>
+
+    <!-- Core -->
+    <script src="https://afterhex.domcloud.io/vendor/jquery/jquery.min.js"></script>
+    <script src="https://afterhex.domcloud.io/vendor/popper/popper.min.js"></script>
+    <script src="https://afterhex.domcloud.io/vendor/bootstrap/bootstrap.min.js"></script>
+    
+
+    <!-- Vendor JS -->
+    
+    <script src="https://afterhex.domcloud.io/vendor/waypoints/jquery.waypoints.min.js"></script>
+    
+    <!-- pixel JS -->
+    <script src="https://afterhex.domcloud.io/js/pixel.js?v=1"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+
+    <script>
+        particlesJS.load('particles-js', "https://afterhex.domcloud.io/js/particles.json");
+    </script>
+
+    <script>
+    $(document).ready(function(){
+        $('.do-order').click(function(){
+            var p_id = $(this).val();
+            $('#message').text( 'Are you sure want to purchase '+ $("#product-name-"+p_id).text());
+            $('#app_id').val(p_id);
+            $('#modal-default').modal('show');
+       
+        });
+    });
+</script>
+
+    
+</body>
+
+</html>
